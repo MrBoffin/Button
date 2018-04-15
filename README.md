@@ -121,3 +121,30 @@ The time in milliseconds when the button last changed state *(unsigned long)*
 ```c++
 unsigned long lastChange = myButton.lastChange();
 ```
+### Pin()
+#### Description
+It may be useful to know which pin this button instance is pointing to. 
+##### Syntax
+`uint8_t pinValue = myButton.Pin();`
+##### Parameters
+None.
+##### Returns 
+The pin value this button was instantiated with.
+##### Example
+`#define PIN1 1
+#define PIN2 2
+.
+.
+.
+void buttonAction(Button button)
+{
+    switch(button.Pin())
+    {
+        case PIN1:
+	    /* Do stuff for button 1 */
+	    break;
+        case PIN2:
+	    /* Do stuff for button 2 */
+	    break;
+    }
+}`
