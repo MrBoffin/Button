@@ -16,6 +16,13 @@
 
 #include "Button.h"
 
+/*
+    Pin() - Returns the value of the pin for this button.
+*/
+uint8_t Button::Pin()
+{
+    return _pin;
+}
 /*----------------------------------------------------------------------*
  * Button(pin, puEnable, invert, dbTime) instantiates a button object.  *
  * pin      Is the Arduino pin the button is connected to.              *
