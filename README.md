@@ -131,20 +131,20 @@ None.
 ##### Returns 
 The pin value this button was instantiated with.
 ##### Example
-`#define PIN1 1
-#define PIN2 2
-.
-.
-.
-void buttonAction(Button button)
-{
-    switch(button.Pin())
-    {
-        case PIN1:
-	    /* Do stuff for button 1 */
-	    break;
-        case PIN2:
-	    /* Do stuff for button 2 */
-	    break;
-    }
-}`
+`#define PIN1 1`
+`#define PIN2 2`
+`.`
+`.`
+`.`
+`void buttonAction(Button button)`
+`{`
+`    switch(button.Pin())`
+`    {`
+`        case PIN1:`
+`	    /* Do stuff for button 1 */`
+`	    break;`
+`        case PIN2:`
+`	    /* Do stuff for button 2 */`
+`	    break;`
+`    }`
+`}`
